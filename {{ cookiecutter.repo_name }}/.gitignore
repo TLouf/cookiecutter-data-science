@@ -7,6 +7,7 @@ __pycache__/
 
 # Distribution / packaging
 .Python
+.venv/
 env/
 build/
 develop-eggs/
@@ -84,3 +85,9 @@ target/
 
 # Mypy cache
 .mypy_cache/
+
+# Bash scripts
+*.sh
+
+# Remote sync
+.remote-sync.json
