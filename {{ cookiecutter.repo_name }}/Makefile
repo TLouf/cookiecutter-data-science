@@ -30,5 +30,5 @@ create_environment:
 	$(PYTHON_INTERPRETER) -m venv $(PROJECT_DIR)/.venv
 
 ## Test python environment is setup correctly
-test_environment:
+test_environment: create_environment
 	$(PYTHON_INTERPRETER) test_environment.py
