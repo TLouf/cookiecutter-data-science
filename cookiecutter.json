@@ -3,6 +3,5 @@
     "repo_name": "{{ cookiecutter.project_name.lower().replace(' ', '_') }}",
     "author_name": "Thomas Louf",
     "description": "A short description of the project.",
-    "open_source_license": ["MIT", "BSD-3-Clause", "No license file"],
-    "python_interpreter": ["python3", "python"]
+    "open_source_license": ["MIT", "BSD-3-Clause", "No license file"]
 }

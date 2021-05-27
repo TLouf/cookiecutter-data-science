@@ -1,0 +1,9 @@
+name: {{ cookiecutter.repo_name }}
+dependencies:
+  - python
+  - pip
+  - numpy
+  - pandas
+  - matplotlib
+  - pip:
+      - python-dotenv
