@@ -1,7 +1,8 @@
 name: {{ cookiecutter.repo_name }}
 dependencies:
-  - python
+  - python=3.8
   - pip
+  - jupyterlab
   - numpy
   - pandas
   - matplotlib
