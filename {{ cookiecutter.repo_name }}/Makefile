@@ -45,3 +45,8 @@ ifeq (True,$(HAS_CONDA))
 else
 	$(PYTHON_INTERPRETER) -m venv $(PROJECT_DIR)/.venv
 endif
+
+## Build with name of project to have it as tab name.
+jpt-build:
+	conda activate $(PROJECT_NAME)
+	jupyter lab build --name='$(PROJECT_NAME)'
