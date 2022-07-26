@@ -8,6 +8,7 @@ dependencies:
   - ipykernel
   - numpy
   - pandas
+  - jupyterlab
   - matplotlib
   - pip:
-      - python-dotenv
+    - -r requirements.txt
