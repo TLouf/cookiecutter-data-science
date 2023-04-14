@@ -15,7 +15,7 @@ Project Organization
     │   ├── processed      <- The final, canonical data sets for modelling.
     │   └── raw            <- The original, immutable data dump.
     │
-    ├── models             <- Trained and serialized models, model predictions, or model summaries
+    ├── scripts            <- Scripts to send to a cluster e.g.
     │
     ├── notebooks          <- Jupyter notebooks. Naming convention is a number (for ordering),
     │                         the creator's initials, and a short `-` delimited description, e.g.
@@ -26,26 +26,25 @@ Project Organization
     ├── reports            <- Generated analysis as HTML, PDF, LaTeX, etc.
     │   └── figures        <- Generated graphics and figures to be used in reporting
     │
-    ├── requirements.txt   <- The requirements file for reproducing the analysis environment, e.g.
-    │                         generated with `pip freeze > requirements.txt`
+    ├── environment.yml   <- The conda environment file for reproducing the analysis environment, e.g.
+    │                         generated with `conda env export -f environment.yml`
     |
-    ├── src                <- Source code for use in this project.
-    │   ├── __init__.py    <- Makes src a Python module
+    ├── {{ cookiecutter.package_name }}                <- Source code for use in this project.
+    │   ├── __init__.py    <- Makes the project a Python module
     │   │
-    │   ├── data           <- Scripts to download or generate data
+    │   ├── data           <- Data processing code
     │   │   └── make_dataset.py
     │   │
-    │   ├── features       <- Scripts to turn raw data into features for modelling
-    │   │   └── build_features.py
+    │   ├── utils       <- Code for any utilities
     │   │
-    │   └── visualization  <- Scripts to create exploratory and results oriented visualizations
+    │   └── visualization  <- Code to create exploratory and results oriented visualizations
     │       └── visualize.py
     |
-    └── setup.py           <- makes project pip installable (pip install -e .) so src can be imported
+    └── setup.py           <- makes project pip installable (pip install -e .) so {{ cookiecutter.package_name }} can be imported
 
 
 
 
 --------
 
-<p><small>Project based on the <a target="_blank" href="https://drivendata.github.io/cookiecutter-data-science/">cookiecutter data science project template</a>. #cookiecutterdatascience</small></p>
+<p><small>Project based on <a target="_blank" href="https://github.com/drivendata/cookiecutter-data-science">a fork of the cookiecutter data science project template</a>. #cookiecutterdatascience</small></p>
