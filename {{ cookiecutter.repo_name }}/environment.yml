@@ -7,7 +7,7 @@ dependencies:
   - pip
   - ipykernel
   - numpy
-  - pandas
+  - polars
   - jupyterlab
   - matplotlib
   - pip:
