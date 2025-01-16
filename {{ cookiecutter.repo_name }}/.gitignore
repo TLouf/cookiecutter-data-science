@@ -88,3 +88,9 @@ target/
 
 # Bash scripts
 *.sh
+
+# pixi environments
+.pixi
+*.egg-info
+
+.lsyncd.lua
